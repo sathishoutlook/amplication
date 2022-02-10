@@ -66,3 +66,10 @@ model Product {
   tgder       String?
   updatedAt   DateTime @updatedAt
 }
+
+model Employee {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  name      String?
+  updatedAt DateTime @updatedAt
+}
